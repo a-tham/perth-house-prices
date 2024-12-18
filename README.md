@@ -1,6 +1,8 @@
 # Perth House Prices Prediction
 This project is about predicting house prices in Perth using the Perth House Prices dataset from Kaggle. The aim is to use neural networks instead of traditional machine learning models as an experiment, including using a Random Forest model to identify the most important features, as well as incorporating the usage of SA2 regions to better understand the data and reduce dimensionality in our dataset.
 
+Various images can be found inside the Jupyter Notebook for reference to the analysis and results.
+
 ## Table of Contents
 
 1. [Introduction](#introduction)
@@ -120,14 +122,6 @@ The dataset consists of **33,656 properties** sold in Perth, each with details s
 These factors suggest that both internal property features (floor area, number of bathrooms) and external location factors (distance to CBD, quality of nearest school) influence pricing.
 
 We can also visualize where the properties are on a map with prices and land area on the interactive Folium map in the Jupyter Notebook.
-
-**Here are some screenshots at different zoom levels:**
-
-![SA2 Map Western Australia](path/to/western_australia_map.png)
-*Figure 1: SA2 Map of Western Australia*
-
-![SA2 Map Metropolitan Perth](path/to/metropolitan_perth_map.png)
-*Figure 2: SA2 Map of Metropolitan Perth*
 
 ## Data Cleaning and Preprocessing
 
