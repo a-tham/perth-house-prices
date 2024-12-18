@@ -1,7 +1,5 @@
-# perth-house-prices
-Predicting house prices on the Perth House Prices dataset
-
 # Perth House Prices Prediction
+This project is about predicting house prices in Perth using the Perth House Prices dataset from Kaggle. The aim is to use neural networks instead of traditional machine learning models as an experiment, including using a Random Forest model to identify the most important features, as well as incorporating the usage of SA2 regions to better understand the data and reduce dimensionality in our dataset.
 
 ## Table of Contents
 
@@ -318,16 +316,20 @@ The training process employs two optimiser configurations and two learning rate 
 ### Examining Worst Test Set Predictions
 
 1. **Index 15274:**
+[Property 15274](https://www.realestate.com.au/property/274-pinjar-rd-mariginiup-wa-6078/)
    - **Property:** Floral farmland
    - **Issue:** Built-up areas (`floor_area`, `bedrooms`, `bathrooms`, `garage`) are for amenities during work hours, not residential.
    - **Impact:** Large land area likely erroneous; models cannot predict well for such outlier cases.
 
 2. **Index 14300:**
+[Property 14300](https://www.realestate.com.au/sold/property-house-wa-north+fremantle-124734854)
    - **Property:** Luxury penthouse in SA2 Fremantle
    - **Issue:** Price is an outlier in the region; dataset lacks enough data points for luxury properties in this SA2.
    - **Impact:** Accurate based on real estate website but not well-predicted by the model.
 
 3. **Index 330:**
+[Property 330](https://www.realestate.com.au/sold/property-house-wa-north+beach-127095818/)
+[Redeveloped Property](https://www.realestate.com.au/property/1-malcolm-st-north-beach-wa-6020/)
    - **Property:** Sale of land with potential for redevelopment
    - **Issue:** Price based on potential appreciation rather than existing residential infrastructure.
    - **Impact:** Model reflects the sale based on land and redevelopment potential, leading to misprediction.
@@ -366,12 +368,6 @@ The training process employs two optimiser configurations and two learning rate 
 ## Links and References
 
 - **SA2 Postcode Data:** [Matthew Proctor's Australian Postcodes](https://www.matthewproctor.com/australian_postcodes)
-- **Property Details:**
-  - [Property 15274](https://www.realestate.com.au/property/274-pinjar-rd-mariginiup-wa-6078/)
-  - [Property 14300](https://www.realestate.com.au/sold/property-house-wa-north+fremantle-124734854)
-  - [Property 330](https://www.realestate.com.au/sold/property-house-wa-north+beach-127095818/)
-  - [Redeveloped Property](https://www.realestate.com.au/property/1-malcolm-st-north-beach-wa-6020/)
-
 ---
 
 *This README was generated to document the Perth House Prices Prediction project, detailing the data exploration, preprocessing, modeling approaches, results, and recommendations for future work.*
